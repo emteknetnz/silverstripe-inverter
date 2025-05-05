@@ -1,0 +1,7 @@
+---
+Name: emteknetnz-inverter
+Before: '#adminthemes'
+---
+SilverStripe\Admin\LeftAndMain:
+  admin_themes:
+    - 'emteknetnz/silverstripe-inverter:inverter'

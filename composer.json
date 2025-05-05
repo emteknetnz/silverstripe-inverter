@@ -1,0 +1,11 @@
+{
+    "name": "emteknetnz/silverstripe-inverter",
+    "description": "A SilverStripe module for inverting CMS colours",
+    "type": "silverstripe-vendormodule",
+    "license": "MIT",
+    "require": {
+        "silverstripe/admin": "^2 || ^3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

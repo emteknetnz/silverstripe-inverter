@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="$Locale.RFC1766">
+	<head>
+	<% base_tag %>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+	<title>$Title</title>
+</head>
+<body class="loading cms" data-frameworkpath="$ModulePath(silverstripe/framework)"
+	data-member-tempid="$CurrentMember.TempIDHash.ATT"
+>
+
+	<div id="emt-invert" style="
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000000;
+		opacity: 85%;
+		background-color: white;
+		mix-blend-mode: difference;
+		pointer-events: none;
+	"></div>
+
+	<% include SilverStripe\\Admin\\CMSLoadingScreen %>
+
+	<div class="cms-container" data-layout-type="custom">
+		$Menu
+		$Content
+		$PreviewPanel
+    </div>
+</body>
+</html>
