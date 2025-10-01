@@ -31,9 +31,12 @@
     ><%t SilverStripe\\Admin\\LeftAndMain.SkipLink "Skip main navigation" %></a>
 
 	<div class="cms-container" data-layout-type="custom">
-		$Menu
-		$Content
-		$PreviewPanel
+        $Menu
+        <main id="cms-container-skip-link-target"
+             class="cms-container-skip-link-target"
+             tabindex="-1"
+        >$Content</main>
+        $PreviewPanel
     </div>
 </body>
 </html>
