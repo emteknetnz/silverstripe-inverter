@@ -25,18 +25,28 @@
 
 	<% include SilverStripe\\Admin\\CMSLoadingScreen %>
 
-	<a class="cms-container-skip-link"
-       href="#cms-container-skip-link-target"
-       tabindex="0"
-    ><%t SilverStripe\\Admin\\LeftAndMain.SkipLink "Skip main navigation" %></a>
+	<% if $CmsHasSkipLink %>
+		<%-- match 6.2 template --%>
+		<a class="cms-container-skip-link"
+		href="#cms-container-skip-link-target"
+		tabindex="0"
+		><%t SilverStripe\\Admin\\LeftAndMain.SkipLink "Skip main navigation" %></a>
 
-	<div class="cms-container" data-layout-type="custom">
-        $Menu
-        <main id="cms-container-skip-link-target"
-             class="cms-container-skip-link-target"
-             tabindex="-1"
-        >$Content</main>
-        $PreviewPanel
-    </div>
+		<div class="cms-container" data-layout-type="custom">
+			$Menu
+			<main id="cms-container-skip-link-target"
+				class="cms-container-skip-link-target"
+				tabindex="-1"
+			>$Content</main>
+			$PreviewPanel
+		</div>
+	<% else %>
+		<%-- match pre 6.2 template --%>
+		<div class="cms-container" data-layout-type="custom">
+			$Menu
+			$Content
+			$PreviewPanel
+		</div>
+	<% end_if %>
 </body>
 </html>
