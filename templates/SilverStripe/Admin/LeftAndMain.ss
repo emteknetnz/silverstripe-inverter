@@ -27,7 +27,7 @@
 
 	<% if $CmsHasSkipLink %>
 		<%-- match 6.2 template --%>
-		<a class="cms-container-skip-link flexbox-area-grow fill-height fill-width"
+		<a class="cms-container-skip-link"
 		href="#cms-container-skip-link-target"
 		tabindex="0"
 		><%t SilverStripe\\Admin\\LeftAndMain.SkipLink "Skip main navigation" %></a>
@@ -35,7 +35,7 @@
 		<div class="cms-container" data-layout-type="custom">
 			$Menu
 			<main id="cms-container-skip-link-target"
-				class="cms-container-skip-link-target"
+				class="cms-container-skip-link-target flexbox-area-grow fill-height fill-width"
 				tabindex="-1"
 			>$Content</main>
 			$PreviewPanel
