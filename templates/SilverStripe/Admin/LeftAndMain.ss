@@ -27,7 +27,7 @@
 
 	<% if $CmsHasSkipLink %>
 		<%-- match 6.2 template --%>
-		<a class="cms-container-skip-link"
+		<a class="cms-container-skip-link flexbox-area-grow fill-height fill-width"
 		href="#cms-container-skip-link-target"
 		tabindex="0"
 		><%t SilverStripe\\Admin\\LeftAndMain.SkipLink "Skip main navigation" %></a>
