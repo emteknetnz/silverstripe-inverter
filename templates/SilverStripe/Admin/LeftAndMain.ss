@@ -10,18 +10,20 @@
 	data-member-tempid="$CurrentMember.TempIDHash.ATT"
 >
 
-	<div id="emt-invert" style="
-		height: 100%;
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000000;
-		opacity: 85%;
-		background-color: white;
-		mix-blend-mode: difference;
-		pointer-events: none;
-	"></div>
+	<% if $InverterEnabled %>
+		<div id="emt-invert" style="
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1000000;
+			opacity: 85%;
+			background-color: white;
+			mix-blend-mode: difference;
+			pointer-events: none;
+		"></div>
+	<% end_if %>
 
 	<% include SilverStripe\\Admin\\CMSLoadingScreen %>
 
