@@ -2,7 +2,7 @@
 
 Quasi darkmode
 
-Works with Silverstripe CMS 5 and CMS 6
+Works with Silverstripe CMS 5, CMS 6 and CMS 7
 
 Simply composer require this module
 

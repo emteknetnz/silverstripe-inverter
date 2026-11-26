@@ -4,7 +4,7 @@
     "type": "silverstripe-vendormodule",
     "license": "MIT",
     "require": {
-        "silverstripe/admin": "^2 || ^3"
+        "silverstripe/admin": "^2 || ^3 || ^4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
